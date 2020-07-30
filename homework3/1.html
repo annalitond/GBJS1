@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+</head>
+<body>
+
+<script>
+	/*
+	1. С помощью цикла while вывести все простые числа в промежутке от 0 до 100
+	*/
+
+	let number = parseInt(prompt("Вывести все простые числа в промежутке от, например: 0"));
+	let numberBefore = parseInt(prompt("Вывести все простые числа в промежутке до, например: 100"));
+
+	while (number <= numberBefore) {
+
+		for(let i = 2; i <= number; i++){
+
+			if (number % i === 0) {
+
+				if(i === number){
+					document.write(number + ", ");
+				}else {
+					break;
+				}
+			}
+		}
+
+		number++;
+	}
+
+</script>
+
+
+</body>
+</html>
