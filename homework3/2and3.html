@@ -14,7 +14,14 @@
 
 	/*Пока делаем без верстки, то есть создаем переменную, в которую кидаем числовые значения, и пока просто вычисляем их сумму) Верстку будем делать когда поработаем с DOM и событиями)*/
 
-	let goods = [100, 200, 300];
+	let goods = [];
+
+	let sumgoods = parseInt(prompt("Ввудите количество товаров"));
+
+	for (let i=1; i <= sumgoods; i++) {
+		goods.push(parseInt(prompt(`Стоимость товара № ${i}`)));
+	}
+
 
 	function countBasketPrice(arr) {
 		let result = arr.reduce(function (sum, current) {мощи
